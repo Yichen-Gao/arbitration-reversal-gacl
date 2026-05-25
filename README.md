@@ -35,9 +35,11 @@ Cached reproduction uses the included score files. Full inference uses the upstr
 ```bash
 bash data/download_mcrbench.sh
 bash data/download_alme.sh
+bash data/download_mc2.sh
 ```
 
 Raw benchmark audio/images and model checkpoints are downloaded from their upstream sources.
+Dataset URLs are listed in `data/README.md`.
 
 ## 4. Quick Reproduction With Cached Scores
 

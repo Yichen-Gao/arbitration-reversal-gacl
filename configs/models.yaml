@@ -1,0 +1,36 @@
+models:
+  qwen2_audio:
+    display_name: Qwen2-Audio-Inst.
+    hf_repo: Qwen/Qwen2-Audio-7B-Instruct
+    revision_prefix: 0a095220
+    scale: 7B
+  qwen25_omni:
+    display_name: Qwen2.5-Omni
+    hf_repo: Qwen/Qwen2.5-Omni-7B
+    revision_prefix: ae9e1690
+    scale: 7B
+  voxtral:
+    display_name: Voxtral-Small-24B
+    hf_repo: mistralai/Voxtral-Small-24B-2507
+    revision_prefix: 70b3d450
+    scale: 24B
+  qwen3_omni:
+    display_name: Qwen3-Omni
+    hf_repo: Qwen/Qwen3-Omni-30B-A3B-Instruct
+    revision_prefix: 26291f79
+    scale: 30B
+  kimi_audio:
+    display_name: Kimi-Audio-Inst.
+    hf_repo: moonshotai/Kimi-Audio-7B-Instruct
+    revision_prefix: 9a82a84c
+    scale: 7B
+  qwen3_vl_2b:
+    display_name: Qwen3-VL-2B
+    hf_repo: Qwen/Qwen3-VL-2B-Instruct
+    revision_prefix: null
+    scale: 2B
+  qwen3_vl_8b:
+    display_name: Qwen3-VL-8B
+    hf_repo: Qwen/Qwen3-VL-8B-Instruct
+    revision_prefix: null
+    scale: 8B

@@ -1,0 +1,30 @@
+defaults:
+  lambda_value: 0.5
+  tau_A: 0.5
+  alpha_max: 1.0
+selected_audio_hparams:
+  qwen2_audio:
+    aqa: {lambda_value: 1.25, tau_A: 0.5}
+    vsc: {lambda_value: 1.0, tau_A: 1.5}
+    ser: {lambda_value: 2.0, tau_A: 1.5}
+    alme: {lambda_value: 2.0, tau_A: 0.5}
+  qwen25_omni:
+    aqa: {lambda_value: 1.0, tau_A: 0.5}
+    vsc: {lambda_value: 1.25, tau_A: 1.5}
+    ser: {lambda_value: 0.5, tau_A: 0.5}
+    alme: {lambda_value: 2.0, tau_A: 0.5}
+  voxtral:
+    aqa: {lambda_value: 1.25, tau_A: 0.5}
+    vsc: {lambda_value: 0.5, tau_A: 1.0}
+    ser: {lambda_value: 0.5, tau_A: 1.5}
+    alme: {lambda_value: 1.0, tau_A: 0.5}
+  qwen3_omni:
+    aqa: {lambda_value: 1.0, tau_A: 0.5}
+    vsc: {lambda_value: 1.25, tau_A: 0.5}
+    ser: {lambda_value: 0.5, tau_A: 1.0}
+    alme: {lambda_value: 1.25, tau_A: 0.5}
+  kimi_audio:
+    aqa: {lambda_value: 1.0, tau_A: 1.0}
+    vsc: {lambda_value: 1.25, tau_A: 1.0}
+    ser: {lambda_value: 0.5, tau_A: 0.5}
+    alme: {lambda_value: 2.0, tau_A: 0.5}

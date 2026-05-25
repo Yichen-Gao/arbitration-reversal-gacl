@@ -1,0 +1,8 @@
+format: |
+  Question: {question}
+  Text evidence: {text_evidence}
+  Candidates: {candidates}
+  Answer with exactly one candidate.
+branches:
+  joint_conflict: include conflicting text evidence
+  audio_reference: remove conflicting text evidence while keeping audio fixed

@@ -1,0 +1,8 @@
+variant,mcq_drop_5pp,mcq_drop_2p5pp,low_ra_faithful_drop,free_form_surface_preserve,ser_parse_fail,avg_rescue_gain
+Joint (no correction),0.0,0.0,0.0,100.0,0.0,0.0
+Hard switch,13.3,infeasible,,,,66.5
+Naive interpolation,4.6,3.9,4.7,70.0,7.0,38.4
+w/o bound,2.1,1.8,2.1,90.0,27.0,46.4
+w/o N_out,2.1,1.8,2.1,22.0,0.0,46.1
+w/o R_A,2.3,2.3,3.2,90.0,0.0,47.4
+GACL (full),2.1,1.8,2.1,90.0,0.0,45.8

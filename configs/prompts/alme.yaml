@@ -1,0 +1,8 @@
+format: |
+  Question: {question}
+  Context: {text_context}
+  Options: {options}
+  Answer with only the option letter.
+branches:
+  joint_conflict: include edited conflicting transcript context
+  audio_reference: remove or neutralize the conflicting transcript claim while keeping audio fixed

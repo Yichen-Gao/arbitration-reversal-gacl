@@ -1,0 +1,2 @@
+model,task,baseline,method,conflict_acc_delta_pp,note
+Qwen2-Audio-Inst.,VSC,Joint,DoLa,-5.0,One-cell sanity check; mismatch to cross-modal arbitration.

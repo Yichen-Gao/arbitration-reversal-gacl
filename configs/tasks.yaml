@@ -1,0 +1,34 @@
+tasks:
+  aqa:
+    source: MCR-Bench
+    candidates: [yes, no]
+    dev_size: 200
+    test_size: 200
+  vsc:
+    source: MCR-Bench
+    candidates: [Laughter, Sigh, Cough, Throat clearing, Sneeze, Sniff]
+    dev_size: 200
+    test_size: 200
+  ser:
+    source: MCR-Bench
+    candidates: [sad, happy, fearful, angry, surprised, disgusted, neutral]
+    dev_size: 200
+    test_size: 200
+  alme:
+    source: ALME-English
+    candidates: [A, B]
+    dev_size: 200
+    test_size: 200
+  mc2:
+    source: MC2
+    candidates: [A, B]
+    test_size: 200
+    protocol: G2 prefix-trie constrained short-label generation
+branches:
+  joint_conflict: audio plus conflicting text
+  audio_reference: same audio with conflicting text removed or neutralized
+  faithful_joint: audio plus aligned text
+  no_audio: text-only reference for AAD
+  perturbed_audio: perturbed-audio reference for ACD
+  vision_reference: image with conflicting text removed or neutralized for MC2 transfer
+  consistent_joint: image plus aligned text for MC2 faithful transfer

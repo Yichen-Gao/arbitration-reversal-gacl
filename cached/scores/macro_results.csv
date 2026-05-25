@@ -1,0 +1,5 @@
+method,n_cells,mean_test_conflict_acc,mean_gain_vs_joint,mean_test_aligned_acc,mean_aligned_drop,source_run,protocol
+AAD@5pp,19,0.3552631578947369,0.20631578947368423,0.94,0.03210526315789474,cached_anonymous_artifact,G2_prefix_trie_E65_dev200_selected_test200
+ACD@5pp,18,0.3766666666666667,0.22111111111111112,0.9411111111111112,0.029722222222222223,cached_anonymous_artifact,G2_prefix_trie_E65_dev200_selected_test200
+GACL@5pp,20,0.5667499999999999,0.417,0.9289999999999999,0.042499999999999996,cached_anonymous_artifact,G2_prefix_trie_E65_dev200_selected_test200
+Joint,20,0.14975,0.0,0.9715,0.0,cached_anonymous_artifact,G2_prefix_trie_E65_dev200_selected_test200

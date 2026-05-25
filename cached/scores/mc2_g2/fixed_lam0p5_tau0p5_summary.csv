@@ -1,0 +1,9 @@
+model,method,protocol,conflict_vision_follow,consistent_vision_follow,conflict_gate,consistent_gate,parse_rate
+Qwen3-VL-2B,Joint baseline,G2 prefix-trie constrained short-label generation,43.0,100.0,,,100.0
+Qwen3-VL-2B,Vision-priority prompt,G2 prefix-trie constrained short-label generation,64.5,100.0,,,100.0
+Qwen3-VL-2B,Vision-only reference,G2 prefix-trie constrained short-label generation,99.5,99.5,,,100.0
+Qwen3-VL-2B,GACL (fixed),G2 prefix-trie constrained short-label generation,83.5,100.0,56.5,0.5,100.0
+Qwen3-VL-8B,Joint baseline,G2 prefix-trie constrained short-label generation,55.5,100.0,,,100.0
+Qwen3-VL-8B,Vision-priority prompt,G2 prefix-trie constrained short-label generation,90.0,99.5,,,100.0
+Qwen3-VL-8B,Vision-only reference,G2 prefix-trie constrained short-label generation,98.0,98.0,,,100.0
+Qwen3-VL-8B,GACL (fixed),G2 prefix-trie constrained short-label generation,82.0,99.5,42.5,2.0,100.0

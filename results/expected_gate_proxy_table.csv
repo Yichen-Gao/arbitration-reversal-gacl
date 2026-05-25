@@ -1,0 +1,5 @@
+oracle_role,proxy,coverage,precision
+M_A > 0 reliability,R_A,79.4,88.9
+M_J < 0 need,N_out,84.4,98.9
+O opportunity,R_A * N_out,98.2,87.9
+displacement,s_A - s_J,,

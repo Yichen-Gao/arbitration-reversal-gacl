@@ -1,0 +1,12 @@
+baselines:
+  joint:
+    description: Uncorrected joint-conflict branch.
+  aad:
+    description: Audio-aware decoding baseline using a no-audio reference.
+    selection: dev-set faithful-drop budget, 5 percentage points
+  acd:
+    description: Audio contrastive decoding baseline using a perturbed-audio reference.
+    reference_branch: perturbed audio
+    selection: dev-set faithful-drop budget, 5 percentage points
+  hard_switch:
+    description: Endpoint ablation that always replaces joint with same-audio reference when the gate fires.

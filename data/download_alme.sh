@@ -8,7 +8,6 @@ cat <<MSG
 ALME upstream:
   Repository:       https://github.com/jb1999/alme-benchmark
   Common Voice 22:  https://commonvoice.mozilla.org/en/datasets
-  TTS audio:        https://github.com/jb1999/alme-benchmark/releases/tag/tts-audio-v1
 
 Suggested layout:
   ${ROOT}/alme-benchmark/
@@ -23,5 +22,4 @@ cat <<'MSG'
 Download Common Voice Corpus 22.0 from Mozilla Common Voice and place/extract it under:
   data/raw/common_voice/cv-corpus-22.0-2025-06-20/
 
-For optional ALME TTS audio, see the upstream release tag tts-audio-v1.
 MSG

@@ -10,7 +10,6 @@ Cached reproduction uses the included score files. Full inference uses the upstr
 | MCR-Bench data archive | Raw MCR-Bench manifests/audio | https://drive.google.com/file/d/1nXJCx8Neqdm0WMfe9Uq6sX2bvk_3FWUG/view?usp=sharing |
 | ALME | ALME-English transcript/audio conflict task | https://github.com/jb1999/alme-benchmark |
 | Common Voice Corpus 22.0 | Natural speech backing ALME | https://commonvoice.mozilla.org/en/datasets |
-| ALME TTS release | Optional pre-synthesized ALME TTS audio | https://github.com/jb1999/alme-benchmark/releases/tag/tts-audio-v1 |
 | MC2 | Optional vision-text transfer experiment | https://huggingface.co/datasets/271754echo/MC2 |
 
 ## Helper Commands

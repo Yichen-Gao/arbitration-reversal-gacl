@@ -1,11 +1,10 @@
-# Free-form short-answer generation prompts used for the appendix generation checks.
-# These prompts keep the branch evidence pattern fixed: joint includes text evidence;
-# audio_reference removes the competing text while keeping the same audio.
+# Free-form / open-ended generation prompts for appendix checks.
+# Main quantitative results use short-label / closed-set protocols; this file
+# records the less constrained generation surface used for boundary checks.
 
 format: |
-  Question: {question}
+  {question}
   {text_block}
-  Answer with a short answer. Do not include an explanation.
 
 branches:
   joint_conflict:
@@ -17,11 +16,12 @@ branches:
   text_only:
     text_block: "Text evidence: {conflict_text}"
 
-task_guidance:
-  aqa: "Answer the audio question with a concise yes/no-style answer when appropriate."
-  vsc: "Name the vocal sound event."
-  ser: "Name the speaker emotion."
-  alme: "Answer the transcript-comprehension question with a concise option text."
+protocol:
+  decoding: open_ended_generation
+  candidates_in_prompt: false
+  prefix_trie: false
+  evaluation: semantic_label_mapping
+  hypothesis_set: normalized_branch_answers
 
 normalization:
   strip_markdown: true

@@ -123,7 +123,7 @@ The cached path covers the quantitative main tables and Figures 2/3/5.
 Prompt templates are in `configs/prompts/`:
 
 - `mcr.yaml` and `alme.yaml`: closed-set / short-label prompt surfaces.
-- `free_form.yaml`: free-form short-answer generation prompts for appendix checks.
+- `free_form.yaml`: free-form / open-ended generation prompts for appendix checks; main results use short-label protocols.
 - `prompt_interventions.yaml`: fixed prompt variants for the prompt-intervention appendix table.
 
 ## MC2 note

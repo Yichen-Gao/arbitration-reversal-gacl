@@ -2,6 +2,9 @@
 
 The cached path uses stored scores. Full model reproduction can use these
 builders after downloading the original benchmark manifests.
+
+Free-form builders intentionally do not add candidate lists or short-label
+output constraints.
 """
 from __future__ import annotations
 
@@ -30,17 +33,12 @@ def build_audio_reference_prompt(question: str, candidates: list[str]) -> str:
 
 
 def build_free_form_joint_prompt(question: str, conflict_text: str, variant: str = "original") -> str:
-    prompt = (
-        f"Question: {question}\n"
-        f"Text evidence: {conflict_text}\n"
-        "Answer with a short answer. Do not include an explanation."
-    )
+    prompt = f"{question}\nText evidence: {conflict_text}"
     return _append_suffix(prompt, PROMPT_VARIANT_SUFFIXES.get(variant, ""))
 
 
 def build_free_form_audio_reference_prompt(question: str, variant: str = "original") -> str:
-    prompt = f"Question: {question}\nAnswer with a short answer. Do not include an explanation."
-    return _append_suffix(prompt, PROMPT_VARIANT_SUFFIXES.get(variant, ""))
+    return _append_suffix(question, PROMPT_VARIANT_SUFFIXES.get(variant, ""))
 
 
 def build_prompt_intervention(prompt: str, variant: str) -> str:

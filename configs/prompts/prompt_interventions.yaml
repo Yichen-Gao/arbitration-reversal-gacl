@@ -1,0 +1,20 @@
+# Fixed prompt variants used for the appendix prompt-intervention comparison.
+
+variants:
+  original:
+    suffix: ""
+  audio_priority:
+    suffix: |
+      Prioritize the audio evidence when the text and audio disagree.
+  ignore_text:
+    suffix: |
+      Ignore the textual description and answer from the audio.
+  bias_awareness:
+    suffix: |
+      The textual description may be unreliable. Check whether it conflicts with the audio before answering.
+  chain_of_thought:
+    suffix: |
+      Think briefly about the audio and text evidence, then give the final answer only.
+
+output_contract: |
+  Return only the final answer.

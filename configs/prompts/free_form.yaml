@@ -1,0 +1,31 @@
+# Free-form short-answer generation prompts used for the appendix generation checks.
+# These prompts keep the branch evidence pattern fixed: joint includes text evidence;
+# audio_reference removes the competing text while keeping the same audio.
+
+format: |
+  Question: {question}
+  {text_block}
+  Answer with a short answer. Do not include an explanation.
+
+branches:
+  joint_conflict:
+    text_block: "Text evidence: {conflict_text}"
+  faithful_joint:
+    text_block: "Text evidence: {faithful_text}"
+  audio_reference:
+    text_block: ""
+  text_only:
+    text_block: "Text evidence: {conflict_text}"
+
+task_guidance:
+  aqa: "Answer the audio question with a concise yes/no-style answer when appropriate."
+  vsc: "Name the vocal sound event."
+  ser: "Name the speaker emotion."
+  alme: "Answer the transcript-comprehension question with a concise option text."
+
+normalization:
+  strip_markdown: true
+  strip_quotes: true
+  strip_trailing_punctuation: true
+  casefold: true
+  alias_folding: evaluator_defined

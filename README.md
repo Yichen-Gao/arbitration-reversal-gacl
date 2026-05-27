@@ -120,6 +120,12 @@ Cached reproduction is the default path for regenerating the reported tables and
 Cached inputs are documented in `cached/README.md` and `cached/*/PROVENANCE.md`.
 The cached path covers the quantitative main tables and Figures 2/3/5.
 
+Prompt templates are in `configs/prompts/`:
+
+- `mcr.yaml` and `alme.yaml`: closed-set / short-label prompt surfaces.
+- `free_form.yaml`: free-form short-answer generation prompts for appendix checks.
+- `prompt_interventions.yaml`: fixed prompt variants for the prompt-intervention appendix table.
+
 ## MC2 note
 
 The MC2 transfer result uses the G2 prefix-trie constrained short-label generation protocol on two Qwen3-VL backbones. The paper-facing table uses fixed GACL with `lambda=0.5` and `tau_A=0.5`: Qwen3-VL-2B improves from 43.0 to 83.5 (+40.5 pp), and Qwen3-VL-8B improves from 55.5 to 82.0 (+26.5 pp). Cached fixed summaries and auxiliary per-sample endpoint outputs are included under `cached/scores/mc2_g2/`.
@@ -146,7 +152,7 @@ The cached outputs reproduce the reported values:
 ## 9. Repository Structure
 
 ```text
-configs/      model, task, method, and prompt configuration
+configs/      model, task, method, closed-set, free-form, and prompt-intervention configuration
 cached/       anonymized score and patch-result caches
 data/         data download helpers and split IDs
 src/          GACL, baseline, evaluation, analysis, and plotting code

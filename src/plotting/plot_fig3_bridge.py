@@ -58,9 +58,9 @@ def draw(args: argparse.Namespace) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--cached", action="store_true", help="Use cached inputs (default).")
-    parser.add_argument("--scatter", type=Path, default=Path("cached/patch_results/panel_a_qwen2_audio_aqa_scatter.csv"))
-    parser.add_argument("--curve", type=Path, default=Path("cached/patch_results/panel_b_macro_mean_range.csv"))
-    parser.add_argument("--output", type=Path, default=Path("results/expected_fig3.pdf"))
+    parser.add_argument("--scatter", type=Path, default=Path("data/cached/patch_results/panel_a_qwen2_audio_aqa_scatter.csv"))
+    parser.add_argument("--curve", type=Path, default=Path("data/cached/patch_results/panel_b_macro_mean_range.csv"))
+    parser.add_argument("--output", type=Path, default=Path("assets/figures/fig3.pdf"))
     draw(parser.parse_args())
 
 

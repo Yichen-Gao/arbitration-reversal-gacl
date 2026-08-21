@@ -1,5 +1,0 @@
-method,evaluated_configurations,mean_conflict_acc,mean_gain_vs_joint,mean_faithful_acc,mean_faithful_drop
-Joint,20,15.0,0.0,97.2,0.0
-AAD@5pp,19,35.5,20.6,94.0,3.2
-ACD@5pp,18,37.7,22.1,94.1,3.0
-GACL@5pp,20,56.7,41.7,92.9,4.2

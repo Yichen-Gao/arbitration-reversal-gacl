@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this code or the accompanying results in your research, please cite the paper below."
+title: "Beyond Text Following: Repairable Arbitration Reversals in Audio-Language Models"
+authors:
+  - family-names: Gao
+    given-names: Yichen
+  - family-names: Zhang
+    given-names: Yiqun
+  - family-names: Wang
+    given-names: Zijing
+  - family-names: Li
+    given-names: Yujia
+  - family-names: Guo
+    given-names: Heng
+  - family-names: Wu
+    given-names: Xi
+  - family-names: Yang
+    given-names: Xiaocui
+  - family-names: Feng
+    given-names: Shi
+  - family-names: Zhang
+    given-names: Yifei
+  - family-names: Wang
+    given-names: Daling
+abstract: "Audio-language models often follow text that conflicts with audio, even when the audio evidence is clear. We examine whether the audio-supported answer is unavailable or represented but overridden in arbitration, and propose Gated Audio Counterfactual Logit Correction (GACL), a training-free decoding rule for repairing reversals."
+keywords:
+  - audio-language models
+  - multimodal arbitration
+  - training-free decoding
+  - contrastive decoding
+license: MIT
+date-released: 2026-06-03
+repository-code: "https://github.com/Yichen-Gao/arbitration-reversal-gacl"
+url: "https://arxiv.org/abs/2606.05161"
+identifiers:
+  - type: doi
+    value: 10.48550/arXiv.2606.05161
+    description: "arXiv identifier"

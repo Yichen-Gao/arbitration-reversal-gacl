@@ -1,4 +1,4 @@
-name: anonymous-gacl
+name: gacl
 channels:
   - conda-forge
 dependencies:

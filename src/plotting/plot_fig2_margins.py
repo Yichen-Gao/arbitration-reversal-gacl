@@ -75,8 +75,8 @@ def draw(args: argparse.Namespace) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--cached", action="store_true", help="Use cached inputs (default).")
-    parser.add_argument("--input", type=Path, default=Path("cached/scores/margin_rows_r005.jsonl"))
-    parser.add_argument("--output", type=Path, default=Path("results/expected_fig2.pdf"))
+    parser.add_argument("--input", type=Path, default=Path("data/cached/scores/margin_rows_r005.jsonl"))
+    parser.add_argument("--output", type=Path, default=Path("assets/figures/fig2.pdf"))
     draw(parser.parse_args())
 
 

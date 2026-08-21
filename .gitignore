@@ -8,4 +8,4 @@ data/raw/
 models/
 checkpoints/
 wandb/
-results/gacl_cached_predictions.jsonl
+assets/figures/

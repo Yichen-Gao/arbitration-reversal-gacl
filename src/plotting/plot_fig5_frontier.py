@@ -36,8 +36,8 @@ def read_curve(path: Path) -> dict[str, list[dict[str, float | str]]]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--cached", action="store_true", help="Use cached inputs (default).")
-    parser.add_argument("--input", type=Path, default=Path("cached/scores/fig5_frontier_bootstrap.csv"))
-    parser.add_argument("--output", type=Path, default=Path("results/expected_fig5.pdf"))
+    parser.add_argument("--input", type=Path, default=Path("data/cached/scores/fig5_frontier_bootstrap.csv"))
+    parser.add_argument("--output", type=Path, default=Path("assets/figures/fig5.pdf"))
     args = parser.parse_args()
 
     apply_style()

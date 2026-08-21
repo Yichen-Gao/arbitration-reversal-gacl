@@ -1,7 +1,0 @@
-site,model,AQA,VSC,SER,ALME
-Answer-side residual,Qwen2-Audio-Inst.,1.00,0.96,0.44,0.81
-Answer-side residual,Qwen2.5-Omni,1.00,0.88,0.54,0.86
-Answer-side residual,Voxtral-Small-24B,1.00,0.95,0.56,0.87
-Answer-side residual,Macro,1.00,0.93,0.51,0.85
-Audio-span,Macro,0.00,0.00,0.00,0.00
-Instruction-token,Macro,0.00,0.00,0.00,0.00

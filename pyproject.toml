@@ -1,9 +1,15 @@
 [project]
-name = "anonymous-gacl"
+name = "gacl"
 version = "0.1.0"
-description = "Minimal anonymous reproduction package for GACL paper artifacts."
+description = "Code release for Beyond Text Following: Repairable Arbitration Reversals in Audio-Language Models (EMNLP 2026 Main)."
+readme = "README.md"
 requires-python = ">=3.10"
 dependencies = ["matplotlib>=3.7", "numpy>=1.24", "pyyaml>=6.0"]
+license = { text = "MIT" }
+
+[project.urls]
+Repository = "https://github.com/Yichen-Gao/arbitration-reversal-gacl"
+Paper = "https://arxiv.org/abs/2606.05161"
 
 [tool.pytest.ini_options]
 pythonpath = ["."]

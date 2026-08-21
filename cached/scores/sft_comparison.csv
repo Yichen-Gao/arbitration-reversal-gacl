@@ -1,6 +1,0 @@
-task,sft_adv_acc,sft_faithful_drop,gacl_adv_acc,retention
-AQA,92.1,10.3,86.0,93
-VSC,63.4,1.0,55.5,85
-SER,40.5,21.7,20.5,51
-Macro incl. SER,65.3,11.0,54.0,76
-Macro excl. SER,77.8,5.7,70.8,89
